@@ -67,3 +67,21 @@ p{
 .sporters{
     padding: 16px;
 }
+.table_afspraken{
+    background-color: lightgray;
+}
+
+.container_for_button {
+    height: 50px;
+    position: relative;
+  }
+  
+  .center_for_button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(55, 142, 181, 0.9);
+  }
