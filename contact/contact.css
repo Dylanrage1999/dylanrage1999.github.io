@@ -1,0 +1,41 @@
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 425px;
+}
+
+td {
+    text-align: center;
+    width: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pictures img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+
+/*
+p{
+    text-align: justify;
+}
+*/
