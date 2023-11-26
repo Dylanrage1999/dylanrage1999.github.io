@@ -173,6 +173,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
+  justify-content: center;
 }
 .frame1-text08 {
   color: rgba(0, 0, 0, 1);
