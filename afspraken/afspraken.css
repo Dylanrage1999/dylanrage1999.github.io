@@ -171,7 +171,7 @@ body {
   }
   
   .frame1-header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    max-height: 300px;
   }
   
   .frame1-header .menu-btn:checked ~ .menu-icon .navicon {
