@@ -165,7 +165,56 @@ body {
   .frame1-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  
+  .cta h3 {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+.text-center {
+  text-align: center!important;
+}  
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.cta .cta-btn {
+/*  font-family: "Raleway", sans-serif; */
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid rgba(55, 142, 181, 0.9);
+  color: black;
+}
+
+.cta .cta-btn:hover{
+  /*  font-family: "Raleway", sans-serif; */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid rgba(55, 142, 181, 0.9);
+    background-color: rgba(55, 142, 181, 0.9);
+    color: black;
+  }
   /* 48em = 768px */
   
   @media (min-width: 48em) {
@@ -183,4 +232,52 @@ body {
     .frame1-header .menu-icon {
       display: none;
     }
+  }
+  .frame1-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px; /* Adjust the spacing between menu items as needed */
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    margin: 0 15px; /* Adjust the spacing between menu items as needed */
+  }  
+
+  .frame1-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 15px; /* Adjust the spacing between menu items as needed */
   }
