@@ -226,3 +226,8 @@ p{
       display: none;
     }
   }
+  @media only screen and (max-width: 600px) {
+    .hide-on-small-screen {
+      display: none;
+    }
+  }
