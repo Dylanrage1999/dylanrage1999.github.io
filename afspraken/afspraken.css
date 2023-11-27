@@ -7,7 +7,7 @@ section h2 {
 }
 
 table {
-    width: 75%;
+    width: 100%;
     border-collapse: collapse;
     height: 425px;
 }
@@ -41,7 +41,16 @@ p{
 */
 #afspraken{
     text-align: justify;
-    padding: 100px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */    
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#afspraken div{
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  width: 700px;
 }
 .afspraken_p{
     text-align: left;
