@@ -1586,3 +1586,19 @@ section {
 .close:hover {
   color: #aaa;
 }
+.inner-page{
+  height: 900px;
+  padding-left: 50px;
+}
+.table_text{
+  width: 50%;
+  position: absolute;
+}
+.table_img{
+  width: 50%;
+  float: right;
+  position: relative;
+}
+.table_img img{
+  width: 50%;
+}
