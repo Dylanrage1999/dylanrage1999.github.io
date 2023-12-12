@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPAuth = true;
         $mail->Username = 'info@podologiesolesolutions.be'; // Update with your SMTP username
         $mail->Password = 'Ignim5vw%1'; // Update with your SMTP password
-        $mail->SMTPSecure = 'tls';
+        $mail->SMTPSecure = 'false'; //was tls
         $mail->Port = 465;
 
         // Recipients
