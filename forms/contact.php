@@ -2,9 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require './assets/vendor/PHPMailer/src/Exception.php';
-require './assets/vendor/PHPMailer/src/PHPMailer.php';
-require './assets/vendor/PHPMailer/src/SMTP.php';
+require 'vendor/autoload.php'; // Include the Composer autoloader
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize user input
