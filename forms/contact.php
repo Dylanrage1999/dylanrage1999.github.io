@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp-auth.mailprotect.be'; // Update with your SMTP server
         $mail->SMTPAuth = true;
-        $mail->Username = 'info@podologiesolesolutions.be'; // Update with your SMTP username
+        $mail->Username = 'dylan.rage@icloud.com'; // Update with your SMTP username
         $mail->Password = 'Ignim5vw%1'; // Update with your SMTP password
         $mail->SMTPSecure = 'false'; //was tls
         $mail->Port = 465;
