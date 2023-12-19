@@ -27,14 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Squadfree
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <style>
     /* Style for the pop-up */
     .popup {
@@ -443,8 +436,10 @@
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Bericht" required></textarea>
+                <br>
+                <br>
               </div>
-              <div class="text-center"><button type="submit">Bericht verzenden</button></div>
+              <div class="text-center"><button type="button" onclick="submitForm()">Bericht verzenden</button></div>
             </form>
           </div>
 
@@ -544,6 +539,32 @@
 
   <!-- Template Main JS File -->
   <script src="./assets/js/main.js"></script>
+  <script>
+    function submitForm() {
+        // Gather form data
+        var formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            subject: $("#subject").val(),
+            message: $("#message").val()
+        };
+    
+        // Send AJAX request
+        $.ajax({
+            type: "POST",
+            url: "./forms/contact.php", // Update with the correct path to your PHP script
+            data: formData,
+            success: function(response) {
+                // Handle the response (e.g., show a success message)
+                console.log(response);
+            },
+            error: function(error) {
+                // Handle errors (e.g., show an error message)
+                console.error(error.responseText);
+            }
+        });
+    }
+    </script>
 
 </body>
 
