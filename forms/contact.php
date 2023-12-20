@@ -6,8 +6,8 @@ use Aws\SES\SESClient;
 
 try {
     $sesClient = new SESClient([
-        'key' => 'AKIAZZEU2G55ZXR4GFUO',    //Vervang de waarde van YOUR_API_KEY_ID door je API-sleutel-ID van Amazon SES.
-        'secret' => 'BFDacKHLb5bp6LP7I44n4a6FKDBGaoOrL7tNp0xPhsPq',    //Vervang de waarde van YOUR_SECRET_ACCESS_KEY door je geheime toegangssleutel van Amazon SES.
+        'key' => 'AKIAZZEU2G55VUDZZV6B',    //Vervang de waarde van YOUR_API_KEY_ID door je API-sleutel-ID van Amazon SES.
+        'secret' => '7Hi9Cns17y/yCnpx190/V6DA2nNyvRqxSXvUuSOi',    //Vervang de waarde van YOUR_SECRET_ACCESS_KEY door je geheime toegangssleutel van Amazon SES.
         'region' => 'eu-north-1'
     ]);
 
@@ -16,9 +16,9 @@ try {
     //Zorg ervoor dat je het sender email address in from hebt geconfigureerd.
     //Zorg ervoor dat je de recipient email address in to hebt geconfigureerd.
 
-    $from = 'from@example.com'; // Update with your sender email address
+    $from = 'info@podologiesolesolutions.be'; // Update with your sender email address
     $to = 'info@podologiesolesolutions.be'; // Update with the recipient email address
-    $subject = $subject;
+    $subject = "Info Request: $subject";
     $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage:\n$message";
 
     $result = $sesClient->sendEmail([
