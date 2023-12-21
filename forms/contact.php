@@ -6,9 +6,9 @@ use Aws\SES\SESClient;
 
 try {
     $sesClient = new SESClient([
-        'key' => 'AKIAZZEU2G55VUDZZV6B',    //Vervang de waarde van YOUR_API_KEY_ID door je API-sleutel-ID van Amazon SES.
-        'secret' => '7Hi9Cns17y/yCnpx190/V6DA2nNyvRqxSXvUuSOi',    //Vervang de waarde van YOUR_SECRET_ACCESS_KEY door je geheime toegangssleutel van Amazon SES.
-        'region' => 'eu-north-1'
+        'key' => '',    //Vervang de waarde van YOUR_API_KEY_ID door je API-sleutel-ID van Amazon SES.
+        'secret' => '',    //Vervang de waarde van YOUR_SECRET_ACCESS_KEY door je geheime toegangssleutel van Amazon SES.
+        'region' => ''
     ]);
 
 
