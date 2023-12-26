@@ -23,17 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     fetch(endpoint, requestOptions)
-      .then((response) => {
-        if (!response.ok) throw new Error("Error in fetch");
-        return response.json();
-      })
-      .then((response) => {
-        document.getElementById("result-text").innerText = "Email sent successfully!";
-        // Clear the form fields
-        form.reset();
-      })
-      .catch((error) => {
-        document.getElementById("result-text").innerText = "An unknown error occurred.";
-      });
+    .then((response) => {
+       if (!response.ok) throw new Error("Error in fetch");
+       return response.json();
+    })
+    .then((response) => {
+       document.getElementById("result-text").innerText = "Email sent successfully!";
+    })
+    .catch((error) => {
+       document.getElementById("result-text").innerText = "An unknown error occurred.";
+    })
+    .finally(() => {
+       // Reset the form fields regardless of success or failure
+       form.reset();
+    });
+ 
   });
 });
