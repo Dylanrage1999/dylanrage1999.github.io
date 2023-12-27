@@ -1635,6 +1635,7 @@ section {
   .container-contact {
     flex-direction: column;
     align-items: stretch;
+    margin-right: 50px;
   }
 
   .image-container {
