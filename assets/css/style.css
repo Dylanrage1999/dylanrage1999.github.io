@@ -73,11 +73,12 @@ h6 {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Header
@@ -121,7 +122,7 @@ h6 {
   max-height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #header.header-scrolled {
     padding: 15px 0;
   }
@@ -305,7 +306,7 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -478,7 +479,7 @@ h6 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -567,7 +568,7 @@ section {
   content: "/";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -664,13 +665,13 @@ section {
   color: #848484;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .about .content {
     padding-right: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .about {
     text-align: center;
   }
@@ -1193,7 +1194,7 @@ section {
   margin: 0 2px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .team .member {
     margin-bottom: 110px;
   }
@@ -1477,7 +1478,7 @@ section {
   color: #fff;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1024px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
@@ -1630,7 +1631,7 @@ section {
   border-radius: 8px; /* Optional: Add rounded corners */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container-contact {
     flex-direction: column;
     align-items: stretch;
@@ -1646,7 +1647,7 @@ section {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #mobileCTAButton {
     display: inline-block;
     border: 2px solid rgba(255, 255, 255);
