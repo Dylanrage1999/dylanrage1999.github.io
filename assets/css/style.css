@@ -421,6 +421,7 @@ h6 {
   background-position: center; /* Adjust as needed */
   position: relative;
   margin-bottom: -90px;
+  background-repeat: no-repeat;
 }
 
 #hero .hero-container {
