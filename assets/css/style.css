@@ -434,10 +434,23 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {
   #hero {
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-container {
     background-repeat: no-repeat;
   }
 }
