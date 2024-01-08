@@ -424,7 +424,6 @@ h6 {
   content: "";
   background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)),
               url("../img/unnamed.jpg") center center no-repeat;
-  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -432,6 +431,19 @@ h6 {
   bottom: 0;
   z-index: -1;
 }
+
+@media (max-width: 767px) {
+  #hero::before {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero::before {
+    background-size: cover;
+  }
+}
+
 
 #hero .hero-container {
   position: absolute;
