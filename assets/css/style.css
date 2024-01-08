@@ -1704,6 +1704,6 @@ section {
 
 /* Optional: Remove padding or margin from the logo container if needed */
 .logo {
-  /* padding: 0; */
-  /* margin: 0; */
+  padding: 0;
+  margin: 0;
 }
