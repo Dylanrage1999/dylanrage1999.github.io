@@ -417,7 +417,7 @@ h6 {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/unnamed.jpg") center center no-repeat;
-  background-position: center; /* Adjust as needed */
+  background-position: center;
   position: relative;
   margin-bottom: -90px;
   background-repeat: no-repeat;
@@ -439,18 +439,18 @@ h6 {
 
 @media (max-width: 767px) {
   #hero {
-    background-repeat: no-repeat;
+    background-attachment: scroll; /* Fix for iPad zoom issue */
   }
 }
 
 @media (max-width: 1200px) {
-  .hero-container {
+  #hero .hero-container {
     background-repeat: no-repeat;
   }
 }
 
 @media (max-width: 767px) {
-  .hero-container {
+  #hero .hero-container {
     background-repeat: no-repeat;
   }
 }
@@ -511,6 +511,7 @@ h6 {
     margin-bottom: 30px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
